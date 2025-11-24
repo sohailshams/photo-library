@@ -111,6 +111,7 @@
 import Lightgallery from 'lightgallery/vue';
 import lgZoom from 'lightgallery/plugins/zoom';
 import lgVideo from 'lightgallery/plugins/video';
+import lgFullscreen from 'lightgallery/plugins/fullscreen';
 
 export default {
     name: 'PhotoLibrary',
@@ -118,7 +119,7 @@ export default {
         Lightgallery,
     },
     data: () => ({
-        plugins: [lgZoom, lgVideo],
+        plugins: [lgZoom, lgVideo, lgFullscreen]
     }),
 };
 </script>
@@ -126,6 +127,8 @@ export default {
 @import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lightgallery.css');
 @import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-zoom.css');
 @import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-video.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-fullscreen.css');
+
 
 body {
     margin: 0;
